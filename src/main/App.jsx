@@ -7,8 +7,6 @@ import Footer from '../template/Footer'
 
 import './App.css'
 
-import 'bootstrap/dist/css/bootstrap.min.css'
-
 const initialState = {
     data: {},
     status: 0
