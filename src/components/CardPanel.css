@@ -1,0 +1,28 @@
+#card-panel {
+    margin: auto;
+    grid-area: main;
+    border-radius: 10px;
+    background-color: lightslategray;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.panelTitle {
+    width: 100%;
+    color: black;
+    margin: 7px;
+}
+
+.panelCards {
+    width: 75vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardRow {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}

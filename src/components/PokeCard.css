@@ -1,3 +1,43 @@
-#poke-card {
-    height: 200px;
+.pokeCard {
+    height: 220px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 1px;
+    margin: 7px;
+}
+
+.nameAndImg {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pokeImg img{
+    width: 150px;
+}
+
+.atackPanel {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.atackRow {
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+   height: 50%;
+}
+
+.pokeAtack {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
