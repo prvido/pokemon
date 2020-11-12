@@ -1,4 +1,4 @@
-#card-panel {
+.card-panel {
     margin: auto;
     grid-area: main;
     border-radius: 10px;
