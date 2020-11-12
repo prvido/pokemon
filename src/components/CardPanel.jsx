@@ -1,31 +1,14 @@
 import React from 'react'
-import axios from 'axios'
 
 import PokeCard from './PokeCard'
 
 import './CardPanel.css'
 
-const initialState = {
-    pokemon: {
-        name: '',
-        sprites: {
-            front_default: ''
-        }
-    }
-}
+const initialState = {}
 
 export default class CardPanel extends React.Component {
 
     state = {...initialState}
-
-    async componentDidMount() {
-        axios.get('https://pokeapi.co/api/v2/pokemon/charizard')
-             .then(resp => {
-                    this.setState({pokemon: resp.data})
-                    console.log(this.state.pokemon)
-                })
-             .catch(err => console.log(err))
-    }
 
     render() {
         return (
@@ -35,16 +18,16 @@ export default class CardPanel extends React.Component {
                 </div>
                 <div className="panelCards">
                     <div className="cardRow">
-                        <PokeCard name={this.state.pokemon.name} img={this.state.pokemon.sprites.front_default}/>
-                        <PokeCard name={this.state.pokemon.name} img={this.state.pokemon.sprites.front_default}/>
+                        <PokeCard id={3} moves={[0, 1, 2, 3]}/>
+                        <PokeCard id={6} moves={[0, 1, 2, 3]}/>
                     </div>
                     <div className="cardRow">
-                        <PokeCard name={this.state.pokemon.name} img={this.state.pokemon.sprites.front_default}/>
-                        <PokeCard name={this.state.pokemon.name} img={this.state.pokemon.sprites.front_default}/>
+                        <PokeCard id={9} moves={[0, 1, 2, 3]}/>
+                        <PokeCard id={12} moves={[0, 1, 2, 3]}/>
                     </div>
                     <div className="cardRow">
-                        <PokeCard name={this.state.pokemon.name} img={this.state.pokemon.sprites.front_default}/>
-                        <PokeCard name={this.state.pokemon.name} img={this.state.pokemon.sprites.front_default}/>
+                        <PokeCard id={15} moves={[0, 1, 2, 3]}/>
+                        <PokeCard id={18} moves={[0, 1, 2, 3]}/>
                     </div>
                     </div>
             </div>
