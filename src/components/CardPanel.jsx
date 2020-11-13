@@ -32,16 +32,16 @@ export default class CardPanel extends React.Component {
                     </div>
                     <div className="panelCards">
                         <div className="cardRow">
-                            <PokeCard id={this.state.idArray[0]} moves={[0, 1, 2, 3]}/>
-                            <PokeCard id={this.state.idArray[1]} moves={[0, 1, 2, 3]}/>
+                            <PokeCard id={this.state.idArray[0]}/>
+                            <PokeCard id={this.state.idArray[1]}/>
                         </div>
                         <div className="cardRow">
-                            <PokeCard id={this.state.idArray[2]} moves={[0, 1, 2, 3]}/>
-                            <PokeCard id={this.state.idArray[3]} moves={[0, 1, 2, 3]}/>
+                            <PokeCard id={this.state.idArray[2]}/>
+                            <PokeCard id={this.state.idArray[3]}/>
                         </div>
                         <div className="cardRow">
-                            <PokeCard id={this.state.idArray[4]} moves={[0, 1, 2, 3]}/>
-                            <PokeCard id={this.state.idArray[5]} moves={[0, 1, 2, 3]}/>
+                            <PokeCard id={this.state.idArray[4]}/>
+                            <PokeCard id={this.state.idArray[5]}/>
                         </div>
                         </div>
                 </div>
