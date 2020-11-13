@@ -56,17 +56,17 @@ export default class PokeCard extends React.Component {
                             }</div>
                             <div className="pokeAtack">{
                                 this.state.pokemon.moves[this.state.attacksArr[1]].move.name.charAt(0).toUpperCase()
-                                + this.state.pokemon.moves[this.state.attacksArr[0]].move.name.slice(1)
+                                + this.state.pokemon.moves[this.state.attacksArr[1]].move.name.slice(1)
                             }</div>
                         </div>
                         <div className="atackRow">
                             <div className="pokeAtack">{
                                 this.state.pokemon.moves[this.state.attacksArr[2]].move.name.charAt(0).toUpperCase()
-                                + this.state.pokemon.moves[this.state.attacksArr[0]].move.name.slice(1)
+                                + this.state.pokemon.moves[this.state.attacksArr[2]].move.name.slice(1)
                             }</div>
                             <div className="pokeAtack">{
                                 this.state.pokemon.moves[this.state.attacksArr[3]].move.name.charAt(0).toUpperCase()
-                                + this.state.pokemon.moves[this.state.attacksArr[0]].move.name.slice(1)
+                                + this.state.pokemon.moves[this.state.attacksArr[3]].move.name.slice(1)
                             }</div>
                         </div>
                     </div>
