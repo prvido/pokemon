@@ -2,6 +2,7 @@
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 75px 1fr 50px;
+    grid-template-rows: 80px 1fr 50px;
     grid-template-areas: "header" "main" "footer";
+    background-image: linear-gradient(#f8fafc, #e6eaf0);
 }

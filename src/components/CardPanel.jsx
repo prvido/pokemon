@@ -27,9 +27,6 @@ export default class CardPanel extends React.Component {
         if (this.state.status) {
             return (
                 <div className="card-panel">
-                    <div className="panelTitle">
-                        <h2>Pokémon Team</h2>
-                    </div>
                     <div className="panelCards">
                         <div className="cardRow">
                             <PokeCard id={this.state.idArray[0]}/>

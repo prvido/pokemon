@@ -1,8 +1,9 @@
 header.header {
     grid-area: header;
-    background-color: magenta;
     display: flex;
     align-items: center;
+    background-color: #474A51;
+    color: #dddbdb;
 }
 
 header.header img {

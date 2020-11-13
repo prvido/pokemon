@@ -2,13 +2,9 @@
     margin: 25px auto;
     grid-area: main;
     border-radius: 10px;
-    background-color: maroon;
-}
-
-.panelTitle {
-    width: 100%;
-    color: black;
-    margin: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .panelCards {
