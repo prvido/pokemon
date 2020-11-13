@@ -38,7 +38,7 @@ export default class PokeCard extends React.Component {
     
                     <div className="nameAndImg">
                         <div className="pokeImg">
-                            <a href={`https://www.pokemon.com/br/pokedex/${this.props.id}`} target="_blank"><img src={this.state.pokemon.sprites.front_default} alt="imagem"/></a>
+                            <a href={`https://www.pokemon.com/br/pokedex/${this.props.id}`} target="_blank"><img src={this.state.pokemon.sprites.front_default} alt="imagem" rel="noreferrer"/></a>
                         </div>
                         <div className="pokeName">
                             <h4> {

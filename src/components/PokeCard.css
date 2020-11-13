@@ -1,6 +1,7 @@
 .pokeCard {
-    height: 200px;
+    height: 225px;
     width: 50%;
+    min-width: 400px;
     display: flex;
     align-items: center;
     border-style: solid;
@@ -12,11 +13,11 @@
 }
 
 .nameAndImg {
-    height: 100px;
+    height: 175px;
     width: 40%;
     display: flex;
     flex-direction: column-reverse;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     border-radius: 10px;
 }
