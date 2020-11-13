@@ -1,5 +1,5 @@
 .card-panel {
-    margin: auto;
+    margin: 25px auto;
     grid-area: main;
     border-radius: 10px;
     background-color: maroon;

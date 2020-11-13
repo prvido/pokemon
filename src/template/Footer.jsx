@@ -4,7 +4,10 @@ import './Footer.css'
 
 const Footer = props => {
     return (
-        <footer className="footer">Rodapé</footer>
+        <footer className="footer">
+            <span>Desenvolvido por Pedro Vido</span>
+            <span>prvido@hotmail.com</span>
+        </footer>
     )
 }
 
