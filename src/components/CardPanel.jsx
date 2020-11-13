@@ -4,24 +4,13 @@ import PokeCard from './PokeCard'
 
 import './CardPanel.css'
 
+const getRandomArray = require('../functions/functions')
+
 const lastPokemonIndex = 807 
 
 const initialState = {
     idArray: [],
     status: false
-}
-
-function getRandomArray (n, factor, max) {
-    const array = []
-    let i = 0
-    while (i < n) {
-        const aux = Math.floor(Math.random() * factor)
-        if (aux <= max && !array.includes(aux)) {
-            array.push(aux)
-            i++
-        }
-    }
-    return array
 }
 
 export default class CardPanel extends React.Component {

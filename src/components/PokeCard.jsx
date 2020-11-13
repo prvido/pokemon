@@ -3,9 +3,12 @@ import axios from 'axios'
 
 import "./PokeCard.css"
 
+const getRandomArray = require('../functions/functions')
+
 const initialState = {
     status: false,
-    pokemon: {}
+    pokemon: {},
+    attacksArr: []
 }
 
 export default class PokeCard extends React.Component {
@@ -16,9 +19,16 @@ export default class PokeCard extends React.Component {
         await axios.get(`https://pokeapi.co/api/v2/pokemon/${this.props.id}`)
              .then(resp => {
                     this.setState({pokemon: resp.data})
+                    this.setAtackArray()
                     this.setState({status: true})
                 })
              .catch(err => console.log(err))
+    }
+
+    async setAtackArray() {
+        const lastAttackIndex = this.state.pokemon.moves.length - 1
+        this.setState({attacksArr: getRandomArray(4, 100, lastAttackIndex)})
+        console.log(this.state.pokemon.moves[this.state.attacksArr[0]].move.name)
     }
 
     render() {
@@ -40,12 +50,24 @@ export default class PokeCard extends React.Component {
     
                     <div className="atackPanel">
                         <div className="atackRow">
-                            <div className="pokeAtack">Ataque 1</div>
-                            <div className="pokeAtack">Ataque 2</div>
+                            <div className="pokeAtack">{
+                                this.state.pokemon.moves[this.state.attacksArr[0]].move.name.charAt(0).toUpperCase()
+                                + this.state.pokemon.moves[this.state.attacksArr[0]].move.name.slice(1) 
+                            }</div>
+                            <div className="pokeAtack">{
+                                this.state.pokemon.moves[this.state.attacksArr[1]].move.name.charAt(0).toUpperCase()
+                                + this.state.pokemon.moves[this.state.attacksArr[0]].move.name.slice(1)
+                            }</div>
                         </div>
                         <div className="atackRow">
-                            <div className="pokeAtack">Ataque 3</div>
-                            <div className="pokeAtack">Ataque 4</div>
+                            <div className="pokeAtack">{
+                                this.state.pokemon.moves[this.state.attacksArr[2]].move.name.charAt(0).toUpperCase()
+                                + this.state.pokemon.moves[this.state.attacksArr[0]].move.name.slice(1)
+                            }</div>
+                            <div className="pokeAtack">{
+                                this.state.pokemon.moves[this.state.attacksArr[3]].move.name.charAt(0).toUpperCase()
+                                + this.state.pokemon.moves[this.state.attacksArr[0]].move.name.slice(1)
+                            }</div>
                         </div>
                     </div>
     
